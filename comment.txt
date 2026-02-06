@@ -1,0 +1,41 @@
+class1-
+-parsing->Interpreter->Execute
+-blocking and non-blocking
+-Thread =smallest unit of Execution
+-js is single thread
+-event loop=prebuild functonality in js which checks the callstack 
+,when callstack will empty async function will pushed on the callstack and call stack execute this.
+
+-node.js archtechture-
+-----1. v8 Engine
+-----2. libuv(these  both handel the execution part)
+-npm
+------name export->use export with function,we need to take same name in import also.
+------default export-> does't matter name you can take any name.
+------when import it comes as object{} ,ex-import {xyz} from "x.js";
+ans default export not give that object we dont need to use {}
+------filePath use-> for acces file fron diff folder.
+-ex= const filePath="c:\\notes.pdf"
+-fs.readFile(filePath,"utf8",(err,data)=>{
+    console.log(data);
+})
+-join =it make the path based on the os.
+import Path from "path";
+const dynamicPath=Path.join('notes','GLA','Week.pdf');
+console.log(dynamicPath);
+-------------------comonjs-------------
+------for import,export in comonjs we use require(path of file) and module.exports=functionname or {object}.
+------destructureing 
+------squarenotation
+--------------------pripority in coomonjs-----------(./utils/files)
+----------if i have many files eiht sam name but diff extension ->it search  first first .js 
+if not .js then seaching for .json if this also not then search for folder ans sreach for index file.
+------------------internal caching ----------
+------------snapshort in js for primitive data type --------------
+js take snapshort when first export and paas it next require.
+but in array and object we store refernce not val  and js take snapshort of only data not refernce so that is why it not happens in arr and object
+const count=require(./counter)
+const x=()=>{
+    console(count)
+} module.export
+----------------
