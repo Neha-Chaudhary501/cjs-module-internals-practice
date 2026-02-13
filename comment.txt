@@ -38,4 +38,11 @@ const count=require(./counter)
 const x=()=>{
     console(count)
 } module.export
-----------------
+--------------------------------call stack ,event loop and callback------------------------------
+--micro task and macro,micro have high priority.
+----------------------------promises -> 
+resolve
+fullfilled
+reject failure
+-----then->used for succes
+------chaning->
