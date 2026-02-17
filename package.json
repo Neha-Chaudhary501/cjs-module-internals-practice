@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "AsyncAwait.js",
   "scripts": {
-    "start": "node test.js",
-    "dev": "nodemon test.js"
+    "start": "node httpModule.js",
+    "dev": "nodemon httpModule.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

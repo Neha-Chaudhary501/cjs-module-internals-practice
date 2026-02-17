@@ -46,3 +46,14 @@ fullfilled
 reject failure
 -----then->used for succes
 ------chaning->
+------------------------------------protocol----------------------------------------
+url
+-https(protocol)
+-domain(.in)
+-path parameter
+-query parameter(start from ?) and we have key and values in it.
+-#somevariable ->hash
+-------------cli parameters
+-----node file.js add 1 2
+now make a file.js abd make an array of string of your portions of command.
+
